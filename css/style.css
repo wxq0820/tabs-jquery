@@ -1,0 +1,31 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.box {
+    margin: 30px auto;
+    width: 300px;
+}
+.tabs {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+.tabs > li {
+    flex: 1;
+    line-height: 30px;
+    text-align: center;
+    border-top: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+}
+.tabs > li.active {
+    background-color: #aaa;
+}
+.tabs > li:last-child {
+    border-right: 1px solid #aaa;
+}
+.content {
+    border: 1px solid #aaa;
+    display: none;
+    height: 150px;
+}
+.content.active {
+    display: block;
+}
